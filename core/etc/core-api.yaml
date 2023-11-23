@@ -1,0 +1,13 @@
+Name: core-api
+Host: 0.0.0.0
+Port: 8888
+
+MySQL:
+  DataSource: root:mysql_password@tcp(localhost:3306)/cloud-disk?charset=utf8mb4&parseTime=True&loc=Local
+
+Redis:
+  Addr: localhost:6379
+  Password: ""
+  DB: 0
+#最大ContentLength 10MB config.go RestConf
+MaxBytes: 10 * 1024 * 1024
